@@ -20,7 +20,7 @@ Book Hero
 
 .book-hero{
 
-    height:60vh;
+    height:80vh;
 
     background:url("final.png");
 
@@ -138,7 +138,7 @@ Booking Section
 
     grid-template-columns:1fr 1fr;
 
-    gap:60px;
+    /* gap:0px; */
 
     align-items:center;
 
@@ -246,6 +246,7 @@ Booking Form
     background:#fff;
 
     padding:45px;
+    /* width: 400px; */
 
     border-radius:20px;
 
