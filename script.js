@@ -30,18 +30,30 @@ if (topBtn) {
 // Mobile Menu
 //===============================
 
+// const menuBtn = document.querySelector(".menu-btn");
+// const nav = document.querySelector("nav");
+
+
+// if(menuBtn && nav){
+
+//     menuBtn.addEventListener("click", function(){
+
+//         nav.classList.toggle("active");
+
+//     });
+
+// }
+
 const menuBtn = document.querySelector(".menu-btn");
-const nav = document.querySelector("nav");
+const nav = document.querySelector(".nav nav");
 
-
-if(menuBtn && nav){
-
-    menuBtn.addEventListener("click", function(){
-
+if (menuBtn && nav) {
+    menuBtn.addEventListener("click", function () {
         nav.classList.toggle("active");
 
+        const isOpen = nav.classList.contains("active");
+        menuBtn.setAttribute("aria-expanded", isOpen);
     });
-
 }
 
 
