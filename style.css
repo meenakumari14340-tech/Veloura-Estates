@@ -958,6 +958,61 @@ nav a:hover{color:#D4AF37;}
         height:280px;
     }
 
+    /* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+    .hero h1,
+    .hero span{
+        font-size:34px;
+    }
+
+    .hero-buttons{
+        gap:10px;
+    }
+
+    .gold-btn,
+    .outline-btn,
+    .outline-dark{
+        padding:10px 20px;
+        font-size:13px;
+    }
+
+    .experience-cards{
+        grid-template-columns:1fr;
+    }
+
+    .experience-left img,
+    .showcase-image img{
+        height:280px;
+    }
+
+    .content h3{font-size:20px;}
+
+    .city-card{height:280px;}
+}
+/* Responsive basics */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
     .content h3{font-size:20px;}
 
     .city-card{height:280px;}
