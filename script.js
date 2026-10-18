@@ -44,6 +44,7 @@ if (topBtn) {
 
 // }
 
+
 const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector(".nav nav");
 
@@ -52,7 +53,12 @@ if (menuBtn && nav) {
         nav.classList.toggle("active");
 
         const isOpen = nav.classList.contains("active");
+
         menuBtn.setAttribute("aria-expanded", isOpen);
+
+        menuBtn.innerHTML = isOpen
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
     });
 }
 
