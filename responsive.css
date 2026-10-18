@@ -743,3 +743,130 @@ textarea {
         display: none;
     }
 }
+
+/* FIX: About and Properties mobile hero gap */
+
+@media screen and (max-width: 768px) {
+
+    .inner-hero.about-hero,
+    .inner-hero.properties-hero {
+        margin-top: 64px !important;
+    }
+
+}
+
+/* =========================================
+   FIX: SERVICES & CONTACT HERO / NAVBAR
+========================================= */
+
+/* Desktop */
+
+body > header.inner-header + .page-hero {
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 80px !important;
+    min-height: calc(100vh - 80px) !important;
+    height: auto !important;
+    box-sizing: border-box;
+    padding: 60px 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reset hero text positioning */
+
+body > header.inner-header + .page-hero .hero-content {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+body > header.inner-header + .page-hero .hero-content span,
+body > header.inner-header + .page-hero .hero-content h1,
+body > header.inner-header + .page-hero .hero-content p,
+body > header.inner-header + .page-hero .hero-content .gold-btn {
+    position: static !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none;
+}
+
+/* Tablet and Mobile */
+
+@media screen and (max-width: 768px) {
+
+    body > header.inner-header + .page-hero {
+        margin-top: 70px !important;
+        min-height: calc(100vh - 70px) !important;
+        height: auto !important;
+        padding: 40px 18px !important;
+    }
+
+    body > header.inner-header + .page-hero .hero-content {
+        width: 100%;
+        padding: 0 5px;
+        text-align: center;
+    }
+
+    body > header.inner-header + .page-hero .hero-content span {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+    }
+
+    body > header.inner-header + .page-hero .hero-content h1 {
+        font-size: clamp(28px, 7vw, 36px) !important;
+        line-height: 1.25;
+        margin: 12px auto 20px;
+        overflow-wrap: break-word;
+    }
+
+    body > header.inner-header + .page-hero .hero-content p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 auto 25px;
+        max-width: 100%;
+    }
+
+    body > header.inner-header + .page-hero .hero-content .gold-btn {
+        display: inline-flex;
+        margin-top: 5px;
+    }
+}
+
+/* Small Mobile */
+
+@media screen and (max-width: 480px) {
+
+    body > header.inner-header + .page-hero {
+        margin-top: 65px !important;
+        min-height: calc(100vh - 65px) !important;
+        padding: 35px 16px !important;
+    }
+
+    body > header.inner-header + .page-hero .hero-content h1 {
+        font-size: 28px !important;
+    }
+
+    body > header.inner-header + .page-hero .hero-content p {
+        font-size: 13px;
+    }
+}
+
+/* FIX: Home page hero starts below the fixed navbar */
+
+@media screen and (max-width: 768px) {
+
+    body > header:not(.inner-header) + .hero {
+        margin-top: 70px !important;
+        min-height: calc(100vh - 70px);
+    }
+
+}
+
