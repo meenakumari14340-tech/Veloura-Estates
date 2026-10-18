@@ -632,3 +632,12 @@ RESPONSIVE - SMALL MOBILE
         font-size:29px;
     }
 }
+@media (max-width: 768px) {
+    .gallery-grid {
+        gap: 20px !important;
+    }
+
+    .gallery-item {
+        margin-bottom: 0;
+    }
+}
